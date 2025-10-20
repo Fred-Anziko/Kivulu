@@ -30,21 +30,22 @@ The core application logic resides in the gig folder..
 `cd gig`
 '
 Kivulu/gig
-├── gigAgent/
-│   ├── __init__.py
-│   ├── agent.py (ADK Agent definition and prompt)
-│   └── whatsapp_bidi_server.py (FastAPI entry point, Twilio webhook,and ADK Runner)
-├── gigClientAgent/
-│   ├── __init__.py
-│   ├── agent.py (ADK Agent definition and prompt)
-│   ├── google_calendar_tools.py (Google Calendar API interaction logic)
-├── gigWorkerAgent/
-│   ├── __init__.py
-│   ├── agent.py (ADK Agent definition and prompt)
-├── auth_server.py (Defines the FastAPI APIRouter for the Google OAuth flow)
-├── requirements.txt
-├── README.md
-└── Dockerfile (Defines the production deployment environment)
+gigAgent/
+  __init__.py
+  agent.py (ADK Agent definition and prompt)
+  whatsapp_bidi_server.py (FastAPI entry point, Twilio webhook,and ADK Runner)
+gigClientAgent/
+  __init__.py
+  agent.py (ADK Agent definition and prompt)
+  google_calendar_tools.py (Google Calendar API interaction logic)
+gigWorkerAgent/
+  __init__.py
+  agent.py (ADK Agent definition and prompt)
+  auth_server.py (Defines the FastAPI APIRouter for the Google OAuth flow)
+  requirements.txt
+  Dockerfile (Defines the production deployment environment)
+Kivulu architecture diagram.png
+README.md
 '
 # Setup and Deployment
 This application is designed to be deployed using a Dockerfile to a platform like Google Cloud Run.
