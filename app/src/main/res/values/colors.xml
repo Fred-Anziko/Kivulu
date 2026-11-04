@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_primary">#0F4C5C</color>
+    <color name="teal_secondary">#1F6E8C</color>
+    <color name="amber_accent">#E07A5F</color>
+    <color name="gold_rating">#F2A65A</color>
+    <color name="bg_light">#F8F9FA</color>
+</resources>
