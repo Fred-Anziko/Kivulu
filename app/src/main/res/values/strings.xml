@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Kivulu</string>
-    <string name="app_subtitle">Efficient Gig Marketplace &amp; AI Vetting</string>
-    <string name="tab_explore">Explore</string>
-    <string name="tab_assistant">AI Assistant</string>
-    <string name="tab_my_tasks">My Tasks</string>
-    <string name="tab_profile">Profile &amp; Vetting</string>
-</resources>

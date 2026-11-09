@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kivulu - Efficient Gig Marketplace</title>
-  </head>
-  <body class="bg-gray-50 text-gray-900 antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kivulu - Connecting Skills To Gig Tasks, Instantly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="relative overflow-hidden pt-12 md:pt-24 bg-gradient-to-br from-blue-600 to-teal-800 text-white">
+        <div class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight tracking-tight">
+                Kivulu: Efficient Gig Marketplace
+            </h1>
+            <a href="#start" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300">
+                Get Started
+            </a>
+        </div>
+        <svg class="absolute bottom-0 left-0 w-full h-auto text-teal-500 opacity-20 transform -translate-y-1/2 -z-1" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path fill="currentColor" d="M0,100 Q50,-50 100,100 T200,100" />
+        </svg>
+    </header>
+
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Kivulu - Connecting Skills To Gig Tasks, Instantly</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-blue-200 text-blue-700 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944a11.954 11.954 0 007.834 3.055a1 1 0 00.466-1.897A13.954 13.954 0 0010 0C4.612 0 .68 3.992.05 9.184a1 1 0 001.932.518A11.954 11.954 0 002.166 4.999zM10 5a5 5 0 015 5a1 1 0 002 0a7 7 0 10-14 0a1 1 0 002 0a5 5 0 015-5zM1.01 11.838a1 1 0 00-.465 1.897A13.954 13.954 0 0010 20c5.388 0 9.32-3.992 9.95-9.184a1 1 0 00-1.932-.518A11.954 11.954 0 0010 18.056a11.954 11.954 0 00-7.834-3.055a1 1 0 00-.99-1.163z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI-Powered Vetting & Matching</h3>
+                    <p class="text-gray-600">Our AI Agents Verify Every Gig Worker and Skills. Instantly Match The Right Talents To The Right Job Based On Location, Skills, and Reputation.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-teal-200 text-teal-700 rounded-full flex items-center justify-center mb-4">
+                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L19 19l-1.414 1.414-4.05-4.05a7 7 0 01-9.9-9.9zM6.464 5.464a5 5 0 107.072 7.072A5 5 0 006.464 5.464z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Instant Gig Tasks Discovery</h3>
+                    <p class="text-gray-600">For Gig Workers: Stop Searching, Start Working. Receive Real-time, Location-based Gig Tasks Scheduled Directly On Your Calendar From Clients Near You.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-indigo-200 text-indigo-700 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.022 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Secure & Transparent Process</h3>
+                    <p class="text-gray-600">With Secure Escrow Payments, Your Money Is Safe Until The Job Is Done. A Public Rating System Ensures Accountability and Builds Trust For Everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="start" class="py-16 md:py-24 bg-gray-900 text-white text-center">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Get Started on WhatsApp Today</h2>
+            <p class="text-lg opacity-80 mb-8">
+                Connect With The Kivulu AI Agent On WhatsApp To Get Started In Seconds. No App Download Needed.
+            </p>
+            <a href="https://wa.me/14155238886?text= join fallen-brother" target="_blank" class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
+                <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M17.16 2.82A9.95 9.95 0 0010 0 10 10 0 000 10c0 1.95.5 3.84 1.48 5.48L0 20l5.52-1.48A9.95 9.95 0 0010 20a10 10 0 007.16-17.18zM10 18a8 8 0 110-16 8 8 0 010 16zm-1.8-6.6a.7.7 0 01-.25-.56c.1-.2.27-.37.47-.47a.7.7 0 01.56.25c.18.15.35.3.5.45.18.15.35.3.5.45.15.15.3.3.45.45a.7.7 0 01.1.18c.05.08.1.15.15.25.08.1.15.2.25.25.1.1.2.18.3.25.1.08.2.15.25.2.1.08.15.1.25.2a.7.7 0 01.4-.4c-.1-.1-.2-.2-.3-.3a.7.7 0 01-.4-.4c-.1-.1-.2-.2-.3-.3a.7.7 0 01-.4-.4c-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3z"/></svg>
+                Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center sm:text-left">
+            <div class="sm:flex sm:justify-between sm:items-center">
+                <h3 class="text-xl font-bold text-white mb-4 sm:mb-0">Kivulu</h3>
+                <div class="sm:flex sm:items-center">
+                    <p class="flex items-center justify-center sm:justify-start mb-2 sm:mb-0 sm:mr-6">
+                        <svg class="w-5 h-5 mr-2 text-teal-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 11.233l7.997-5.349A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8V6a2 2 0 00-2-2H4a2 2 0 00-2 2v2l8 5.349L18 8z"/></svg>
+                        <a href="mailto:anzikofred@gmail.com" class="hover:underline">anzikofred@gmail.com</a>
+                    </p>
+                    <p class="flex items-center justify-center sm:justify-start">
+                        <svg class="w-5 h-5 mr-2 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H3a1 1 0 01-1-1V3zM7 3a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H8a1 1 0 01-1-1V3zM12 3a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1V3z"/></svg>
+                        <span>+256 742 453 863</span>
+                    </p>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-4">
+            <p class="text-sm text-center">© 2025 Kivulu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
